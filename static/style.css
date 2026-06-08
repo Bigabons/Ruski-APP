@@ -1,0 +1,309 @@
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface2: #242837;
+  --border: #2e3347;
+  --text: #e8eaf0;
+  --text-muted: #7b82a0;
+  --accent: #6c8fff;
+  --accent-dim: #3d52b0;
+  --green: #4caf7d;
+  --yellow: #f5c542;
+  --red: #e05c5c;
+  --highlight: #f5c542; /* new Cyrillic letters for Dominika */
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Layout ── */
+#app { width: 100%; max-width: 480px; padding: 0 16px 80px; }
+
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* ── Nav bar ── */
+#nav {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  justify-content: space-around;
+  padding: 8px 0 env(safe-area-inset-bottom, 8px);
+  z-index: 100;
+}
+#nav.visible { display: flex; }
+.nav-btn {
+  background: none; border: none; cursor: pointer;
+  color: var(--text-muted);
+  display: flex; flex-direction: column; align-items: center;
+  gap: 3px; font-size: 11px; padding: 4px 16px;
+  transition: color .15s;
+}
+.nav-btn.active { color: var(--accent); }
+.nav-btn svg { width: 22px; height: 22px; }
+
+/* ── Login screen ── */
+#screen-login {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  min-height: 100vh; gap: 24px; padding: 32px 16px;
+}
+.login-title { font-size: 28px; font-weight: 700; text-align: center; }
+.login-sub { color: var(--text-muted); font-size: 14px; text-align: center; }
+
+.user-cards {
+  display: flex; gap: 12px; width: 100%; max-width: 340px;
+}
+.user-card {
+  flex: 1; padding: 20px 12px; background: var(--surface);
+  border: 2px solid var(--border); border-radius: var(--radius);
+  cursor: pointer; text-align: center; font-size: 16px; font-weight: 600;
+  transition: border-color .15s, background .15s;
+}
+.user-card:hover { border-color: var(--accent); }
+.user-card.selected { border-color: var(--accent); background: var(--surface2); }
+.user-card .avatar { font-size: 32px; margin-bottom: 8px; }
+
+.pin-area { width: 100%; max-width: 340px; }
+.pin-label { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+.pin-input {
+  width: 100%; padding: 14px 16px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); color: var(--text);
+  font-size: 24px; letter-spacing: 8px; text-align: center;
+  outline: none;
+}
+.pin-input:focus { border-color: var(--accent); }
+
+.btn-primary {
+  width: 100%; padding: 14px;
+  background: var(--accent); color: #fff;
+  border: none; border-radius: var(--radius);
+  font-size: 16px; font-weight: 600; cursor: pointer;
+  transition: opacity .15s;
+}
+.btn-primary:disabled { opacity: .5; cursor: not-allowed; }
+.btn-primary:hover:not(:disabled) { opacity: .9; }
+
+.login-error {
+  color: var(--red); font-size: 14px; text-align: center;
+  min-height: 20px;
+}
+
+/* ── Home screen ── */
+.home-header {
+  padding: 28px 0 20px;
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+.home-greeting { font-size: 22px; font-weight: 700; }
+.home-date { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+.streak-badge {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--surface2); padding: 8px 14px;
+  border-radius: 999px; font-size: 14px; font-weight: 600;
+}
+.streak-badge .fire { font-size: 18px; }
+
+.stats-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px; margin-bottom: 20px;
+}
+.stat-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 12px; text-align: center;
+}
+.stat-num { font-size: 26px; font-weight: 700; }
+.stat-label { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+
+.study-card-btn {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px;
+  cursor: pointer; width: 100%; text-align: left;
+  transition: border-color .15s;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.study-card-btn:hover { border-color: var(--accent); }
+.study-card-btn .left .title { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+.study-card-btn .left .sub { font-size: 13px; color: var(--text-muted); }
+.study-card-btn .arrow { font-size: 22px; color: var(--accent); }
+
+.nothing-today {
+  text-align: center; padding: 40px 0;
+  color: var(--text-muted); font-size: 15px;
+}
+
+/* ── Flashcard screen ── */
+.study-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 0 8px;
+}
+.study-back {
+  background: none; border: none; cursor: pointer;
+  color: var(--text-muted); font-size: 14px; padding: 6px 0;
+  display: flex; align-items: center; gap: 6px;
+}
+.progress-bar-wrap { flex: 1; height: 4px; background: var(--surface2); border-radius: 2px; margin: 0 16px; }
+.progress-bar { height: 100%; background: var(--accent); border-radius: 2px; transition: width .3s; }
+.progress-text { font-size: 13px; color: var(--text-muted); }
+
+/* 3D card flip */
+.card-scene {
+  perspective: 900px;
+  margin: 16px 0 20px;
+  cursor: pointer;
+}
+.card-flip {
+  position: relative; width: 100%; padding-bottom: 56%;
+  transform-style: preserve-3d;
+  transition: transform .45s cubic-bezier(.4,0,.2,1);
+}
+.card-flip.flipped { transform: rotateY(180deg); }
+
+.card-face {
+  position: absolute; inset: 0;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backface-visibility: hidden;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 24px;
+}
+.card-face.back { transform: rotateY(180deg); }
+
+.card-kategoria {
+  position: absolute; top: 14px; left: 16px;
+  font-size: 11px; text-transform: uppercase; letter-spacing: .8px;
+  color: var(--text-muted);
+}
+.card-tts {
+  position: absolute; top: 10px; right: 14px;
+  background: none; border: none; cursor: pointer;
+  color: var(--text-muted); font-size: 20px;
+  transition: color .15s;
+}
+.card-tts:hover { color: var(--accent); }
+
+.card-ru {
+  font-size: 36px; font-weight: 700; text-align: center;
+  line-height: 1.2; margin-bottom: 10px;
+  word-break: break-word;
+}
+.card-translit { font-size: 16px; color: var(--text-muted); }
+
+.card-pl { font-size: 28px; font-weight: 600; text-align: center; }
+.card-hint { font-size: 13px; color: var(--text-muted); margin-top: 10px; }
+
+/* Cyrillic highlight for Dominika */
+.new-cyr {
+  color: var(--highlight);
+  font-weight: inherit;
+}
+
+.show-hint {
+  text-align: center; color: var(--text-muted); font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.grade-buttons {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px; margin-top: 4px;
+}
+.grade-btn {
+  padding: 14px 8px; border: 1px solid var(--border);
+  border-radius: var(--radius); font-size: 14px; font-weight: 600;
+  cursor: pointer; background: var(--surface);
+  transition: background .15s, border-color .15s;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.grade-btn .g-icon { font-size: 22px; }
+.grade-btn.grade-0 { color: var(--red); }
+.grade-btn.grade-0:hover { background: #2a1a1a; border-color: var(--red); }
+.grade-btn.grade-1 { color: var(--yellow); }
+.grade-btn.grade-1:hover { background: #2a2410; border-color: var(--yellow); }
+.grade-btn.grade-2 { color: var(--green); }
+.grade-btn.grade-2:hover { background: #152a1e; border-color: var(--green); }
+
+.grade-buttons.hidden { display: none; }
+
+/* Session done */
+.session-done {
+  text-align: center; padding: 60px 20px;
+}
+.session-done .done-icon { font-size: 56px; margin-bottom: 16px; }
+.session-done h2 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+.session-done p { color: var(--text-muted); font-size: 15px; margin-bottom: 28px; }
+
+/* ── Browse screen ── */
+.browse-header { padding: 24px 0 16px; font-size: 20px; font-weight: 700; }
+.kategoria-tabs {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
+}
+.tab-btn {
+  padding: 6px 14px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface);
+  color: var(--text-muted); font-size: 13px; cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.tab-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.word-list { display: flex; flex-direction: column; gap: 8px; }
+.word-item {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 12px 16px;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 4px;
+}
+.word-item .ru { font-size: 18px; font-weight: 600; }
+.word-item .translit { font-size: 12px; color: var(--text-muted); }
+.word-item .pl { font-size: 14px; color: var(--text-muted); text-align: right; align-self: center; }
+
+/* ── Stats screen ── */
+.stats-header { padding: 24px 0 20px; font-size: 20px; font-weight: 700; }
+.stats-big {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 10px; margin-bottom: 16px;
+}
+.stat-big-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px 16px;
+}
+.stat-big-num { font-size: 40px; font-weight: 800; color: var(--accent); }
+.stat-big-label { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+.logout-btn {
+  width: 100%; margin-top: 20px; padding: 12px;
+  background: none; border: 1px solid var(--border);
+  border-radius: var(--radius); color: var(--text-muted);
+  font-size: 14px; cursor: pointer;
+  transition: border-color .15s, color .15s;
+}
+.logout-btn:hover { border-color: var(--red); color: var(--red); }
+
+/* ── Toast ── */
+#toast {
+  position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
+  background: var(--surface2); border: 1px solid var(--border);
+  color: var(--text); padding: 10px 20px;
+  border-radius: 999px; font-size: 14px;
+  opacity: 0; pointer-events: none;
+  transition: opacity .2s;
+  white-space: nowrap; z-index: 200;
+}
+#toast.show { opacity: 1; }
+
+@media (max-width: 360px) {
+  .card-ru { font-size: 28px; }
+  .grade-btn { padding: 10px 6px; font-size: 12px; }
+}

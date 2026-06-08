@@ -1,0 +1,968 @@
+[
+  {
+    "ru": "Привет",
+    "translit": "privet",
+    "pl": "Cześć",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Здравствуйте",
+    "translit": "zdravstvuyte",
+    "pl": "Dzień dobry (formalnie)",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "До свидания",
+    "translit": "do svidaniya",
+    "pl": "Do widzenia",
+    "kategoria": "podstawy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Пока",
+    "translit": "poka",
+    "pl": "Pa / cześć (na odchodne)",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Спасибо",
+    "translit": "spasibo",
+    "pl": "Dziękuję",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Пожалуйста",
+    "translit": "pozhaluysta",
+    "pl": "Proszę / Nie ma za co",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Извините",
+    "translit": "izvinite",
+    "pl": "Przepraszam",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Да",
+    "translit": "da",
+    "pl": "Tak",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Нет",
+    "translit": "nyet",
+    "pl": "Nie",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Хорошо",
+    "translit": "khorosho",
+    "pl": "Dobrze / OK",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Понятно",
+    "translit": "ponyatno",
+    "pl": "Rozumiem / Jasne",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Не понимаю",
+    "translit": "ne ponimayu",
+    "pl": "Nie rozumiem",
+    "kategoria": "podstawy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Говорите медленнее",
+    "translit": "govorite medlennee",
+    "pl": "Mówcie wolniej",
+    "kategoria": "podstawy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Повторите",
+    "translit": "povtorite",
+    "pl": "Proszę powtórzyć",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Как вас зовут?",
+    "translit": "kak vas zovut?",
+    "pl": "Jak się pan/pani nazywa?",
+    "kategoria": "podstawy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Меня зовут...",
+    "translit": "menya zovut...",
+    "pl": "Mam na imię...",
+    "kategoria": "podstawy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Как дела?",
+    "translit": "kak dela?",
+    "pl": "Jak się masz?",
+    "kategoria": "podstawy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Хорошо, спасибо",
+    "translit": "khorosho, spasibo",
+    "pl": "Dobrze, dziękuję",
+    "kategoria": "podstawy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Помогите!",
+    "translit": "pomogite!",
+    "pl": "Pomocy!",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Где туалет?",
+    "translit": "gde tualet?",
+    "pl": "Gdzie jest toaleta?",
+    "kategoria": "podstawy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Открыто",
+    "translit": "otkryto",
+    "pl": "Otwarte",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Закрыто",
+    "translit": "zakryto",
+    "pl": "Zamknięte",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Ноль",
+    "translit": "nol",
+    "pl": "Zero",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Один",
+    "translit": "odin",
+    "pl": "Jeden",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Два",
+    "translit": "dva",
+    "pl": "Dwa",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Три",
+    "translit": "tri",
+    "pl": "Trzy",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Четыре",
+    "translit": "chetyre",
+    "pl": "Cztery",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Пять",
+    "translit": "pyat'",
+    "pl": "Pięć",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Шесть",
+    "translit": "shest'",
+    "pl": "Sześć",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Семь",
+    "translit": "sem'",
+    "pl": "Siedem",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Восемь",
+    "translit": "vosem'",
+    "pl": "Osiem",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Девять",
+    "translit": "devyat'",
+    "pl": "Dziewięć",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Десять",
+    "translit": "desyat'",
+    "pl": "Dziesięć",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Двадцать",
+    "translit": "dvadtsat'",
+    "pl": "Dwadzieścia",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Пятьдесят",
+    "translit": "pyat'desyat",
+    "pl": "Pięćdziesiąt",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Сто",
+    "translit": "sto",
+    "pl": "Sto",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Тысяча",
+    "translit": "tysyacha",
+    "pl": "Tysiąc",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Сегодня",
+    "translit": "segodnya",
+    "pl": "Dzisiaj",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Завтра",
+    "translit": "zavtra",
+    "pl": "Jutro",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Вчера",
+    "translit": "vchera",
+    "pl": "Wczoraj",
+    "kategoria": "podstawy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Сколько стоит?",
+    "translit": "skolko stoit?",
+    "pl": "Ile kosztuje?",
+    "kategoria": "zakupy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Дорого",
+    "translit": "dorogo",
+    "pl": "Drogo",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Дёшево",
+    "translit": "dyoshevo",
+    "pl": "Tanio",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Слишком дорого",
+    "translit": "slishkom dorogo",
+    "pl": "Za drogo",
+    "kategoria": "zakupy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Вода",
+    "translit": "voda",
+    "pl": "Woda",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Хлеб",
+    "translit": "khleb",
+    "pl": "Chleb",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Мясо",
+    "translit": "myaso",
+    "pl": "Mięso",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Рыба",
+    "translit": "ryba",
+    "pl": "Ryba",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Фрукты",
+    "translit": "frukty",
+    "pl": "Owoce",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Овощи",
+    "translit": "ovoshchi",
+    "pl": "Warzywa",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Молоко",
+    "translit": "moloko",
+    "pl": "Mleko",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Яйца",
+    "translit": "yaytsa",
+    "pl": "Jajka",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Чай",
+    "translit": "chay",
+    "pl": "Herbata",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Кофе",
+    "translit": "kofe",
+    "pl": "Kawa",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Пиво",
+    "translit": "pivo",
+    "pl": "Piwo",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Касса",
+    "translit": "kassa",
+    "pl": "Kasa",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Пакет",
+    "translit": "paket",
+    "pl": "Torba / reklamówka",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Деньги",
+    "translit": "den'gi",
+    "pl": "Pieniądze",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Карта",
+    "translit": "karta",
+    "pl": "Karta / mapa",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Наличные",
+    "translit": "nalichnye",
+    "pl": "Gotówka",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Скидка",
+    "translit": "skidka",
+    "pl": "Zniżka / rabat",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Рынок",
+    "translit": "rynok",
+    "pl": "Bazar / targ",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Магазин",
+    "translit": "magazin",
+    "pl": "Sklep",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Аптека",
+    "translit": "apteka",
+    "pl": "Apteka",
+    "kategoria": "zakupy",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Дайте мне...",
+    "translit": "dayte mne...",
+    "pl": "Proszę dać mi...",
+    "kategoria": "zakupy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Есть ли...?",
+    "translit": "yest' li...?",
+    "pl": "Czy jest...?",
+    "kategoria": "zakupy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Нет в наличии",
+    "translit": "net v nalichii",
+    "pl": "Nie ma w magazynie",
+    "kategoria": "zakupy",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Гостиница",
+    "translit": "gostinitsa",
+    "pl": "Hotel",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Комната",
+    "translit": "komnata",
+    "pl": "Pokój",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Номер",
+    "translit": "nomer",
+    "pl": "Numer / pokój hotelowy",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Бронирование",
+    "translit": "bronirovanie",
+    "pl": "Rezerwacja",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Ключ",
+    "translit": "klyuch",
+    "pl": "Klucz",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Сколько ночей?",
+    "translit": "skolko nochey?",
+    "pl": "Ile nocy?",
+    "kategoria": "hotel",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Одна ночь",
+    "translit": "odna noch'",
+    "pl": "Jedna noc",
+    "kategoria": "hotel",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Завтрак",
+    "translit": "zavtrak",
+    "pl": "Śniadanie",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Включено",
+    "translit": "vklyucheno",
+    "pl": "Wliczone / w cenie",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Пароль от вайфай",
+    "translit": "parol' ot vayfay",
+    "pl": "Hasło do Wi-Fi",
+    "kategoria": "hotel",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Душ",
+    "translit": "dush",
+    "pl": "Prysznic",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Полотенце",
+    "translit": "polotentse",
+    "pl": "Ręcznik",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Регистрация",
+    "translit": "registratsiya",
+    "pl": "Zameldowanie",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Выезд",
+    "translit": "vyezd",
+    "pl": "Wymeldowanie",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Паспорт",
+    "translit": "pasport",
+    "pl": "Paszport",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Лифт",
+    "translit": "lift",
+    "pl": "Winda",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Этаж",
+    "translit": "etazh",
+    "pl": "Piętro",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Кондиционер",
+    "translit": "konditsioner",
+    "pl": "Klimatyzator",
+    "kategoria": "hotel",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Есть свободные номера?",
+    "translit": "yest' svobodnye nomera?",
+    "pl": "Czy są wolne pokoje?",
+    "kategoria": "hotel",
+    "typ": "fraza"
+  },
+  {
+    "ru": "На одного / двоих",
+    "translit": "na odnogo / dvoikh",
+    "pl": "Dla jednej / dwóch osób",
+    "kategoria": "hotel",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Заправка",
+    "translit": "zapravka",
+    "pl": "Stacja benzynowa",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Бензин",
+    "translit": "benzin",
+    "pl": "Benzyna",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Дизель",
+    "translit": "dizel'",
+    "pl": "Diesel",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Полный бак",
+    "translit": "polnyy bak",
+    "pl": "Pełny bak",
+    "kategoria": "auto",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Литр",
+    "translit": "litr",
+    "pl": "Litr",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Дорога",
+    "translit": "doroga",
+    "pl": "Droga",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Направо",
+    "translit": "napravo",
+    "pl": "W prawo",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Налево",
+    "translit": "nalevo",
+    "pl": "W lewo",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Прямо",
+    "translit": "pryamo",
+    "pl": "Prosto",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Парковка",
+    "translit": "parkovka",
+    "pl": "Parking",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Документы",
+    "translit": "dokumenty",
+    "pl": "Dokumenty",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Полиция",
+    "translit": "politsiya",
+    "pl": "Policja",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "ДПС",
+    "translit": "DPS",
+    "pl": "Policja drogowa (Дорожно-патрульная служба)",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Авария",
+    "translit": "avariya",
+    "pl": "Wypadek / awaria",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Шиномонтаж",
+    "translit": "shinomontazh",
+    "pl": "Wulkanizator",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Ремонт",
+    "translit": "remont",
+    "pl": "Naprawa",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Скорость",
+    "translit": "skorost'",
+    "pl": "Prędkość",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Граница",
+    "translit": "granitsa",
+    "pl": "Granica",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Таможня",
+    "translit": "tamozhnya",
+    "pl": "Urząd celny",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Страховка",
+    "translit": "strakhovka",
+    "pl": "Ubezpieczenie",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Техосмотр",
+    "translit": "tekhosmotr",
+    "pl": "Przegląd techniczny",
+    "kategoria": "auto",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Вокзал",
+    "translit": "vokzal",
+    "pl": "Dworzec",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Аэропорт",
+    "translit": "aeroport",
+    "pl": "Lotnisko",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Автобус",
+    "translit": "avtobus",
+    "pl": "Autobus",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Такси",
+    "translit": "taksi",
+    "pl": "Taksówka",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Поезд",
+    "translit": "poyezd",
+    "pl": "Pociąg",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Билет",
+    "translit": "bilet",
+    "pl": "Bilet",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Туда и обратно",
+    "translit": "tuda i obratno",
+    "pl": "W obie strony",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "В одну сторону",
+    "translit": "v odnu storonu",
+    "pl": "W jedną stronę",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Откуда?",
+    "translit": "otkuda?",
+    "pl": "Skąd?",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Куда?",
+    "translit": "kuda?",
+    "pl": "Dokąd?",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Когда?",
+    "translit": "kogda?",
+    "pl": "Kiedy?",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Где?",
+    "translit": "gde?",
+    "pl": "Gdzie?",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Город",
+    "translit": "gorod",
+    "pl": "Miasto",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Улица",
+    "translit": "ulitsa",
+    "pl": "Ulica",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Центр",
+    "translit": "tsentr",
+    "pl": "Centrum",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Рядом",
+    "translit": "ryadom",
+    "pl": "Blisko / obok",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Далеко",
+    "translit": "daleko",
+    "pl": "Daleko",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Подождите",
+    "translit": "podozhdite",
+    "pl": "Proszę poczekać",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Сколько времени?",
+    "translit": "skolko vremeni?",
+    "pl": "Ile czasu? / Która godzina?",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Сколько стоит до...?",
+    "translit": "skolko stoit do...?",
+    "pl": "Ile kosztuje do...?",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Я не понимаю",
+    "translit": "ya ne ponimayu",
+    "pl": "Nie rozumiem",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Говорите по-английски?",
+    "translit": "govorite po-angliyski?",
+    "pl": "Mówi pan/pani po angielsku?",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Где можно поесть?",
+    "translit": "gde mozhno poyest'?",
+    "pl": "Gdzie można zjeść?",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Ресторан",
+    "translit": "restoran",
+    "pl": "Restauracja",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Кафе",
+    "translit": "kafe",
+    "pl": "Kawiarnia / bar",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Больница",
+    "translit": "bol'nitsa",
+    "pl": "Szpital",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Врач",
+    "translit": "vrach",
+    "pl": "Lekarz",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  },
+  {
+    "ru": "Мне плохо",
+    "translit": "mne plokho",
+    "pl": "Źle się czuję",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Вызовите скорую!",
+    "translit": "vyzovite skoruyu!",
+    "pl": "Wezwijcie pogotowie!",
+    "kategoria": "podróż",
+    "typ": "fraza"
+  },
+  {
+    "ru": "Интернет",
+    "translit": "internet",
+    "pl": "Internet",
+    "kategoria": "podróż",
+    "typ": "slowo"
+  }
+]

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rosyjski</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- Login -->
+<div id="screen-login" class="screen active">
+  <div class="login-title">Rosyjski 🇷🇺</div>
+  <div class="login-sub">Pod wyjazd do Kazachstanu i Kirgistanu</div>
+
+  <div class="user-cards">
+    <div class="user-card" data-name="Maciej" onclick="selectUser(this)">
+      <div class="avatar">👨</div>
+      Maciej
+    </div>
+    <div class="user-card" data-name="Dominika" onclick="selectUser(this)">
+      <div class="avatar">👩</div>
+      Dominika
+    </div>
+  </div>
+
+  <div class="pin-area">
+    <div class="pin-label">PIN (4 cyfry)</div>
+    <input id="pin-input" class="pin-input" type="password" inputmode="numeric"
+           maxlength="4" placeholder="••••" autocomplete="off"
+           oninput="onPinInput()">
+  </div>
+
+  <div style="width:100%;max-width:340px">
+    <button class="btn-primary" id="login-btn" onclick="doLogin()" disabled>
+      Zaloguj się
+    </button>
+  </div>
+  <div class="login-error" id="login-error"></div>
+</div>
+
+<!-- Nav -->
+<nav id="nav">
+  <button class="nav-btn active" id="nav-home" onclick="showScreen('home')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <polyline points="9 22 9 12 15 12 15 22"/>
+    </svg>
+    Dziś
+  </button>
+  <button class="nav-btn" id="nav-study" onclick="startStudy()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="2" y="3" width="20" height="14" rx="2"/>
+      <line x1="8" y1="21" x2="16" y2="21"/>
+      <line x1="12" y1="17" x2="12" y2="21"/>
+    </svg>
+    Ucz się
+  </button>
+  <button class="nav-btn" id="nav-browse" onclick="showScreen('browse')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+      <line x1="8" y1="18" x2="21" y2="18"/>
+      <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/>
+      <line x1="3" y1="18" x2="3.01" y2="18"/>
+    </svg>
+    Słownik
+  </button>
+  <button class="nav-btn" id="nav-stats" onclick="showScreen('stats')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
+      <line x1="6" y1="20" x2="6" y2="14"/>
+    </svg>
+    Statystyki
+  </button>
+</nav>
+
+<div id="app">
+
+<!-- Home -->
+<div id="screen-home" class="screen">
+  <div class="home-header">
+    <div>
+      <div class="home-greeting" id="home-greeting">Cześć!</div>
+      <div class="home-date" id="home-date"></div>
+    </div>
+    <div class="streak-badge">
+      <span class="fire">🔥</span>
+      <span id="streak-num">0</span> dni
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-num" id="stat-known">0</div>
+      <div class="stat-label">opanowanych</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="stat-started">0</div>
+      <div class="stat-label">w toku</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="stat-total">0</div>
+      <div class="stat-label">wszystkich</div>
+    </div>
+  </div>
+
+  <div id="study-cta"></div>
+</div>
+
+<!-- Study -->
+<div id="screen-study" class="screen">
+  <div class="study-header">
+    <button class="study-back" onclick="showScreen('home')">← Wróć</button>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="study-progress-bar" style="width:0%"></div>
+    </div>
+    <span class="progress-text" id="study-progress-text">0/0</span>
+  </div>
+
+  <div id="study-content"></div>
+</div>
+
+<!-- Browse -->
+<div id="screen-browse" class="screen">
+  <div class="browse-header">Słownik</div>
+  <div class="kategoria-tabs" id="kategoria-tabs"></div>
+  <div class="word-list" id="word-list"></div>
+</div>
+
+<!-- Stats -->
+<div id="screen-stats" class="screen">
+  <div class="stats-header" id="stats-user-name">Statystyki</div>
+  <div class="stats-big">
+    <div class="stat-big-card">
+      <div class="stat-big-num" id="big-known">0</div>
+      <div class="stat-big-label">opanowanych słówek</div>
+    </div>
+    <div class="stat-big-card">
+      <div class="stat-big-num" id="big-streak">0</div>
+      <div class="stat-big-label">dni z rzędu</div>
+    </div>
+    <div class="stat-big-card">
+      <div class="stat-big-num" id="big-started">0</div>
+      <div class="stat-big-label">słówek w toku</div>
+    </div>
+    <div class="stat-big-card">
+      <div class="stat-big-num" id="big-total">0</div>
+      <div class="stat-big-label">słówek w bazie</div>
+    </div>
+  </div>
+  <button class="logout-btn" onclick="doLogout()">Wyloguj się</button>
+</div>
+
+</div><!-- #app -->
+
+<div id="toast"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

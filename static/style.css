@@ -56,10 +56,12 @@ body {
 
 /* ── Login screen ── */
 #screen-login {
-  display: flex; flex-direction: column;
+  flex-direction: column;
   align-items: center; justify-content: center;
   min-height: 100vh; gap: 24px; padding: 32px 16px;
 }
+/* ID selector must explicitly override .screen.active { display: block } */
+#screen-login.active { display: flex; }
 .login-title { font-size: 28px; font-weight: 700; text-align: center; }
 .login-sub { color: var(--text-muted); font-size: 14px; text-align: center; }
 

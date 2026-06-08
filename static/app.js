@@ -43,7 +43,10 @@ function onPinInput() {
 
 async function doLogin() {
   const pin = document.getElementById("pin-input").value;
+  const btn = document.getElementById("login-btn");
   document.getElementById("login-error").textContent = "";
+  btn.disabled = true;
+  btn.textContent = "Logowanie…";
   try {
     const data = await api("POST", "/auth/login", { name: selectedUserName, pin });
     state.token = data.token;
@@ -53,6 +56,8 @@ async function doLogin() {
     enterApp();
   } catch (e) {
     document.getElementById("login-error").textContent = e.message || "Błędny PIN";
+    btn.disabled = false;
+    btn.textContent = "Zaloguj się";
   }
 }
 

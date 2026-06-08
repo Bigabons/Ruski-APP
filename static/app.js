@@ -86,7 +86,10 @@ function enterApp() {
 
 function show(id) {
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
+  // Explicitly force login screen off — CSS specificity can't fight inline style
+  const login = document.getElementById("screen-login");
+  login.style.display = (id === "screen-login") ? "flex" : "none";
+  if (id !== "screen-login") document.getElementById(id).classList.add("active");
 }
 
 function setNavActive(name) {

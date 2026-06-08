@@ -226,4 +226,8 @@ app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 @app.get("/")
 def root():
-    return FileResponse(static_dir / "index.html")
+    # no-cache so browsers always get fresh HTML (which references versioned JS/CSS)
+    return FileResponse(
+        static_dir / "index.html",
+        headers={"Cache-Control": "no-cache, no-store, must-revalidate"},
+    )
